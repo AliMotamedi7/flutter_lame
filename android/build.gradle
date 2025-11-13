@@ -40,8 +40,8 @@ android {
     ndkVersion = android.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     defaultConfig {
@@ -53,10 +53,10 @@ android {
                 path = "../src/CMakeLists.txt"
 
                 // Add 16KB page size support for arm64-v8a and x86_64
-                arguments "-DANDROID_ARM_NEON=TRUE", "-DANDROID_STL=c++_shared"
+//                arguments "-DANDROID_ARM_NEON=TRUE", "-DANDROID_STL=c++_shared"
 
                 // Enable 16KB page size for arm64-v8a and x86_64
-                targets "mp3lame-arm64-v8a", "mp3lame-x86_64"
+//                targets "mp3lame-arm64-v8a", "mp3lame-x86_64"
 
                 // The default CMake version for the Android Gradle Plugin is 3.10.2.
                 // https://developer.android.com/studio/projects/install-ndk#vanilla_cmake
