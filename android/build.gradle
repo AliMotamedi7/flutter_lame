@@ -50,7 +50,7 @@ android {
         // Invoke the shared CMake build with the Android Gradle Plugin.
         externalNativeBuild {
             cmake {
-                path = "../src/CMakeLists.txt"
+                path "../src/CMakeLists.txt"
 
                 // Add 16KB page size support for arm64-v8a and x86_64
 //                arguments "-DANDROID_ARM_NEON=TRUE", "-DANDROID_STL=c++_shared"
